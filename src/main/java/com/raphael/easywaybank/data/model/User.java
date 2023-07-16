@@ -1,4 +1,4 @@
-package com.raphael.easywaybank.entity;
+package com.raphael.easywaybank.data.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
