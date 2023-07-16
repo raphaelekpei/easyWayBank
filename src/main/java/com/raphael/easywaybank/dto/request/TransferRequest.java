@@ -1,11 +1,20 @@
-package com.raphael.easywaybank.dto;
+package com.raphael.easywaybank.dto.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class TransferRequest {
     private String sourceAccountNumber;
     private String destinationAccountNumber;
-    private BigDecimal amount;
+    private BigDecimal transferAmount;
 
     // sourceAccountNumber = account to be debited
     // destinationAccountNumber = account to be credited
