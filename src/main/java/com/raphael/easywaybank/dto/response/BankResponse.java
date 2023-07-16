@@ -1,4 +1,4 @@
-package com.raphael.easywaybank.dto;
+package com.raphael.easywaybank.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
