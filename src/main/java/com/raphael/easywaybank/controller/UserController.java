@@ -1,16 +1,20 @@
 package com.raphael.easywaybank.controller;
 
-import com.musdon.thejavaacademybank.dto.*;
-import com.musdon.thejavaacademybank.service.impl.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.raphael.easywaybank.dto.request.CreditDebitRequest;
+import com.raphael.easywaybank.dto.request.EnquiryRequest;
+import com.raphael.easywaybank.dto.request.TransferRequest;
+import com.raphael.easywaybank.dto.request.UserRequest;
+import com.raphael.easywaybank.dto.response.BankResponse;
+import com.raphael.easywaybank.service.UserService;
+import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/user")
+@AllArgsConstructor
 public class UserController {
 
-    @Autowired
-    UserService userService;
+    private final UserService userService;
 
     @PostMapping
     public BankResponse createAccount(@RequestBody UserRequest userRequest){
