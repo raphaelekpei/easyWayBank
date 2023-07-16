@@ -1,4 +1,4 @@
-package com.raphael.easywaybank.dto;
+package com.raphael.easywaybank.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,6 +13,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class AccountInfo {
     private String accountName;
-    private BigDecimal accountBalance;
     private String accountNumber;
+    private BigDecimal accountBalance;
+
 }
