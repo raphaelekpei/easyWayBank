@@ -1,6 +1,6 @@
-package com.raphael.easywaybank.repository;
+package com.raphael.easywaybank.data.repository;
 
-import com.musdon.thejavaacademybank.entity.User;
+import com.raphael.easywaybank.data.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {
@@ -9,14 +9,14 @@ public interface UserRepository extends JpaRepository<User, Long> {
     User findByAccountNumber(String accountNumber);
 }
 
-// bind the repository to a particular entity
-// bind the repository to the User entity
-// This is saying help me manipulate the user entity in the db whose primary key is of type Long.
+// bind the repository to a particular model
+// bind the repository to the User model
+// This is saying help me manipulate the user model in the db whose primary key is of type Long.
 
-// dto - data transfer object
+// data transfer object (dto)
 // Helps in collecting data from the user
 // You don't want to expose the entities to the users, just expose only the required things. A dto helps you to do that
-// Helps separate the object from the entity
+// Helps separate the object from the model
 
 // custom response
 // We should have a single response for every single service.
