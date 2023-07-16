@@ -1,6 +1,10 @@
-package com.raphael.easywaybank.impl;
+package com.raphael.easywaybank.service;
 
-import com.musdon.thejavaacademybank.dto.*;
+import com.raphael.easywaybank.dto.request.CreditDebitRequest;
+import com.raphael.easywaybank.dto.request.EnquiryRequest;
+import com.raphael.easywaybank.dto.request.TransferRequest;
+import com.raphael.easywaybank.dto.request.UserRequest;
+import com.raphael.easywaybank.dto.response.BankResponse;
 
 public interface UserService {
     BankResponse createAccount(UserRequest userRequest);
